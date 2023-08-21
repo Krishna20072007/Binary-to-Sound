@@ -1,0 +1,76 @@
+
+# Text to Audio Converter
+
+
+## Overview
+
+The **Text to Audio Converter** is a Python script that allows you to convert plain text from a file (`input.txt`) into an audio representation, where each character is transformed into a unique audio tone. The resulting audio is saved as a WAV file (`output.wav`).
+
+This script utilizes the `numpy` and `scipy` libraries to generate audio tones and write the audio data to a file. It assigns specific frequencies to '0' and '1' bits and creates a sequence of audio tones to represent the input text.
+
+## Prerequisites
+
+Before using this script, make sure you have the following prerequisites installed on your system:
+
+
+1.  **Python 3.x**: You can download Python from the official website: [Python Downloads](https://www.python.org/downloads/)
+
+2.  **Required Python packages**:
+
+- NumPy: Install it using `pip install numpy`
+
+- SciPy: Install it using `pip install scipy`
+
+## Usage
+
+Follow these steps to convert text into audio using the Text to Audio Converter:
+
+### 1. Prepare Input Text
+
+Create or edit a plain text file named `input.txt`. Write or paste the text you want to convert into this file.
+
+
+### 2. Run the Script
+
+Save the provided Python script (the one with comments) to a file, e.g., `text_to_audio.py`. Open a terminal/command prompt and navigate to the directory containing both `input.txt` and `text_to_audio.py`.
+
+
+Run the script using the following command:
+
+```
+python Encode/main.py
+```
+
+### 3. Review Output
+
+The script will process the text, generate audio tones for each character, and save the resulting audio as output.wav in the same directory.
+
+### 4. Playback
+
+You can play the generated audio using various audio players such as VLC, Windows Media Player, or any media player that supports WAV format.
+
+### Customization
+
+If you want to customize the audio output, you can modify the following parameters in the script:
+
+- **sampling_rate**: Adjust the sample rate (in Hz) for the audio. Higher values provide better audio quality but larger file sizes.
+
+- **duration**: Change the duration (in seconds) of each audio tone. Longer durations result in slower audio playback.
+
+
+- **freq_0 and freq_1**: Modify the frequencies (in Hertz) assigned to '0' and '1' bits, respectively, to change the pitch of the tones.
+
+- **amplitude**: Adjust the amplitude (volume) of the audio tones.
+
+## Troubleshooting
+
+If you encounter any issues while using this script, please ensure that you have correctly installed Python and the required packages (NumPy and SciPy).
+
+
+## License
+This script is provided under the MIT License, allowing for both personal and commercial use with proper attribution
+  
+
+## Acknowledgments
+
+This script was created by Krishna K Lalwani and is maintained on [Github](https://github.com/Krishna20072007/Binary-to-Sound.git).
